@@ -1,2 +1,2 @@
 # ni-js-zve
-No Instructor Javascript Project
+No Instructor Javascript Project by Zachary Smith, Victor Carranza, and Edgar Gutierrez
