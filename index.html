@@ -7,38 +7,62 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="js/bootstrap.min/js">
   <title>Victor's branch</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+<style>
+#myVideo {
+  position:fixed;
+  bottom:0:
+  background:rgba(255, 0, 0, 0.5);
+  color:#95A490;
+  width:100%;
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+
+}
+</style>
+
 <body>
-<div class="jumbotron text-center">
+  <video autoplay muted loop id="myVideo"
+    <source src="lightbulb.mp4" type="video/mp4">
+  </video>
+<div class="Content">
   <h1>Education Resource Program </h1>
   <p>Click here</p>
 </div>
-<!-- carousel-->
-<div class="container-fluid wrap">
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!--indicators  -->
-  <ol class="carousel-indicators">
-    <li data-target="myCarousel" data-slide-to="0" class="active">Educational</li>
-    <li data-target="myCarousel" data-slide-to="1">Resource</li>
-    <li data-target="myCarousel" data-slide-to="2">Program</li>
-  </ol>
-
-
-
-  </div>
-</div>
-
-
-
-
-
-
-
-<button type="button" id="myButton" data-loading-text="Processing..." class="btn btn-primary" autocomplete="off">
-  Processing State
+<button id="myBtn" onClick="myFunction()">Pause
 </button>
+
+
+
+
+
+
+
+
 
 
 
