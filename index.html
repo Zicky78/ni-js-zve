@@ -10,14 +10,15 @@
   <title>Victor's branch</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
+
   * {
     box-sizing: border-box;
     }
 
   body {
     margin: 0;
-    font-family: Arial;
-    font-size: 17px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 24px;
     margin: auto;
 
   }
@@ -28,31 +29,44 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    opacity: 0.5;
   }
-
   .content {
     position: absolute;
-    bottom: 100px;
-    background: rgba(0, 0, 0, 0.5);
+    bottom: 120px;
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
     text-align: center;
     margin: auto;
+    color:#093b63;
+
+
+  }
+  .logo {
+    background-position: center;
+    background-image: url("the-559-resource.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    color:#f1f1f1;
+    position:absolute;
+    text-align: center;
+    padding:250px;
+    background-size:600px;
 
   }
 
-  #myBtn {
+  #button {
     width: 200px;
     font-size: 18px;
     padding: 10px;
     border: none;
-    background: #7192c6;
+    background: #093b63;
     color: #fff;
     cursor: pointer;
   }
 
-  #myBtn:hover {
+  #button:hover {
     background: #ddd;
     color: black;
   }
@@ -66,13 +80,20 @@
 
 <body>
 
-<div class="content">
-  <h1>The 559 Resource </h1>
-  <p>Your local source to a productive and prosperous future.</p>
-  <button id="myBtn" onclick="myFunction()">Get your school on</button>
-</div>
 
-<script>
+<div class="container-fluid">
+  <div class="logo">
+
+  </div>
+
+<div class="content">
+  <p>Your local source to a productive and prosperous future.</p>
+  <!--<button id="myBtn" onclick="myFunction()">Get your school on</button>-->
+  <button id="button"class="btn btn-info">Get your school on</button>
+
+  </div>
+</div>
+<!--<script>
   var video = document.getElementById("myVideo");
   var btn = document.getElementById("myBtn");
 
@@ -86,7 +107,7 @@
       btn.innerHTML = "Play";
     }
   }
-</script>
+</script>-->
 
 </body>
 </html>
