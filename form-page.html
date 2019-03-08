@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Form page</title>
+</head>
+<style>
+  input[type=text],select{
+    width:80%;
+    padding:14px 20px;
+    margin:8px 0;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 14px 20px;
+
+  }
+  input[type=submit] {
+    width: 80%;
+    background-color: #093b63;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+  .container{
+    background-color:#d4dad2;
+    padding:0;
+    margin:0 auto;
+    padding-left: 200px;
+    padding-top: 150px;
+    padding-bottom: 70px;
+    border-radius: 10px;
+  }
+  .logo {
+    background-position: center;
+    background-image: url("the-559-resource.png");
+    background-repeat: no-repeat;
+  }
+
+</style>
+<body>
+
+
+  <div class="container">
+    <div class="logo">
+
+  <form action="/action_page.php">
+    <label for="flname">Name</label>
+    <input type="text" id="flname" name="flname" placeholder="Name">
+
+    <label for="level-of-education">Level of Education</label>
+    <input type="text" id="level-of-education" name="level-of-education" placeholder="Level of Education">
+
+    <label for="budget">Budget</label>
+    <input type="text" id="budget" name="budget" placeholder="budget">
+
+    <label for="career-interests">Career Interests</label>
+      <select name="career-interests" id="career-interests">
+        <option value="computer-science">Computer Science</option>
+        <option value="construction">construction</option>
+        <option value="aviation">aviation</option>
+      </select>
+
+    <input type="submit" value="submit">
+    </form>
+    </div>
+  </div>
+</body>
+</html>
