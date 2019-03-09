@@ -31,28 +31,24 @@
     cursor: pointer;
 
   }
-  .container{
+  body{
     background-color:#d4dad2;
     padding:0;
     margin:0 auto;
-    padding-left: 200px;
+    padding-left: 250px;
     padding-top: 150px;
     padding-bottom: 70px;
     border-radius: 10px;
-  }
-  .logo {
-    background-position: center;
+    background-size: 225px;
     background-image: url("the-559-resource.png");
     background-repeat: no-repeat;
+    background-position: top center;
   }
 
 </style>
 <body>
 
-
-  <div class="container">
-    <div class="logo">
-
+  <div class="container-fluid">
   <form action="/action_page.php">
     <label for="flname">Name</label>
     <input type="text" id="flname" name="flname" placeholder="Name">
@@ -72,7 +68,6 @@
 
     <input type="submit" value="submit">
     </form>
-    </div>
   </div>
 </body>
 </html>
