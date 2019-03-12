@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--Change name!-->
+    
+    <title>All resources</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Hind Madurai', sans-serif;
+            margin: auto;
+
+        }
+
+        .nav-container {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 5%;
+            width: 100%;
+            background-color:#093b63;
+            padding: .25em;
+            padding-left: 4em;
+        }
+
+        .nav-header {
+            color: white;
+            font-size: 1.5em;
+        }
+
+        .big-nav-header {
+            color: white;
+            font-size: 1.75em;
+        }
+
+        a:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav-button {
+            border: .125em solid white;
+            border-radius: .5em;
+            padding: .25em;
+        }
+
+        .big-nav-button {
+            border: .125em solid white;
+            border-radius: .5em;
+            padding: .25em;
+            background-color: #36f82fb7;
+        }
+
+        .nav-button:hover {
+            background-color:  transparent;
+            background-color: #36f82fb7;
+        }
+
+        .big-nav-button:hover {
+            background-color:  transparent;
+            background-color: #093b63;
+        }
+
+        .column-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            width: 30%;
+            height: 90%;
+            background-color: hsla(102, 58%, 56%, 0.75);
+            padding: 1em;
+        }
+
+        .section-header {
+            color: black;
+            text-decoration: underline #093b63;
+        }
+
+        .content-header {
+
+        }
+
+        .content-container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        
+        img {
+            height: 10em;
+            width: 10em;
+            border: .25em solid #093b63;
+            float: left;
+        }
+        p {
+            padding-left: .75em;
+        }
+        
+    </style>
+</head>
+
+<body>
+     <!--Navbar Section-->
+    <div class="nav-container">
+        <div class ="nav-button">
+        <a class="nav-header">Home</a>
+        </div>
+        <div class ="nav-button">
+            <a class="nav-header">About Us</a>
+        </div>
+        <div class="big-nav-button">
+            <a class="big-nav-header">Get Started</a>
+        </div>
+
+        <div class ="nav-button">
+            <a class="nav-header">Resources</a>
+        </div>
+        <div class ="nav-button">
+            <a class="nav-header">Contact Us</a>
+        </div>
+    </div>
+
+    <div class='column-container'>
+        <div class='column'>
+            <h4 class='section-header'>Adult Education</h4>
+            
+        </div>
+        <div class='column'>
+            <h4 class='section-header'>School</h4>
+            <div class='content-container'>
+                    <img src="./images/geekwise.jpg">
+                    <p><a href="https://geekwiseacademy.com/">Geekwise Academy</a> offers afordable HTML, CSS, and Javascript coding courses for those who want to learn how to code
+                        <br>
+                        <br>
+                    Location: 700 Van Ness Ave, Fresno, CA 93721
+                    <br>
+                    <br>
+                    Phone Number: (559) 500-3305 ext. 222
+                    </p>
+                </div>
+
+        </div>
+        <div class='column'>
+            <h4 class='section-header'>Vocational Training</h4>
+        </div>
+    </div>
+
+    
+</body>
+</html>
