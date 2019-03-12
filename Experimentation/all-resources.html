@@ -23,6 +23,19 @@
 
         }
 
+        body, html {
+            height: 100%;
+        }
+
+        .parallax { 
+        background-image: url("./images/parallax.png");
+        height: 100%; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
         .nav-container {
             position: -webkit-sticky;
             position: sticky;
@@ -97,12 +110,13 @@
         }
 
         .section-header {
-            color: black;
+            color: white;
             text-decoration: underline #093b63;
         }
 
         .content-header {
-
+            color: black;
+            text-decoration: underline #093b63;
         }
 
         .content-container {
@@ -116,14 +130,22 @@
             border: .25em solid #093b63;
             float: left;
         }
+
         p {
             padding-left: .75em;
+            padding-top: .5em;
+            font-size: .9em;
+        }
+
+        a {
+            color: #093b63;
         }
         
     </style>
 </head>
 
 <body>
+    <div class="parallax">
      <!--Navbar Section-->
     <div class="nav-container">
         <div class ="nav-button">
@@ -145,17 +167,21 @@
     </div>
 
     <div class='column-container'>
+
         <div class='column'>
-            <h4 class='section-header'>Adult Education</h4>
+            <h3 class='section-header'>Adult Education</h3>
             
         </div>
+
         <div class='column'>
-            <h4 class='section-header'>School</h4>
+            <h3 class='section-header'>School</h3>
+
+            <h4 class='content-header'><a href="https://geekwiseacademy.com/">Geekwise Academy</a></h4>
             <div class='content-container'>
                     <img src="./images/geekwise.jpg">
-                    <p><a href="https://geekwiseacademy.com/">Geekwise Academy</a> offers afordable HTML, CSS, and Javascript coding courses for those who want to learn how to code
-                        <br>
-                        <br>
+                    <p>Geekwise Academy offers afordable HTML, CSS, and Javascript coding courses for those who want to learn how to code
+                    <br>
+                    <br>
                     Location: 700 Van Ness Ave, Fresno, CA 93721
                     <br>
                     <br>
@@ -163,12 +189,28 @@
                     </p>
                 </div>
 
+            <br>
+
+            <h4 class='content-header'><a href="https://www.fresnocitycollege.edu">Fresno City College</a></h4>
+            <div class='content-container'>
+                    <img src="./images/fcc.png">
+                    <p>Fresno's best community college, offering many classes for career paths, and offering transfer opportunities to universities
+                    <br>
+                    <br>
+                    Location: 1101 E University Ave, Fresno, CA 93741
+                    <br>
+                    <br>
+                    Phone Number: (559) 442-4600
+                    </p>
+                </div>
+
         </div>
+
         <div class='column'>
-            <h4 class='section-header'>Vocational Training</h4>
+            <h3 class='section-header'>Vocational Training</h3>
         </div>
     </div>
-
+    </div>
     
 </body>
 </html>
