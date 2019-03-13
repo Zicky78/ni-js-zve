@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Open+Sans"> 
   <title>Form page</title>
 </head>
 <style>
@@ -43,31 +44,60 @@
     background-image: url("the-559-resource.png");
     background-repeat: no-repeat;
     background-position: top center;
+    font-family: 'Open Sans', sans-serif;
   }
 
 </style>
 <body>
 
   <div class="container-fluid">
-  <form action="/action_page.php">
-    <label for="flname">Name</label>
-    <input type="text" id="flname" name="flname" placeholder="Name">
+  <form>
+    <label for="Level-Of-Education">Level of Education</label>
+    <select name="Level-Of-Education" id="Level-Of-Education">
+      <option value="Blank"></option>
+      <option value="High School Graduate">High School Graduate</option>
+      <option value="High School Dropout">High School Dropout</option>
+      <option value="Below High School">Below High School</option>
+      <option value="No Education">No Education</option>
+      <option value="Some College">Some College</option>
 
-    <label for="level-of-education">Level of Education</label>
-    <input type="text" id="level-of-education" name="level-of-education" placeholder="Level of Education">
+    </select>
+    
 
-    <label for="budget">Budget</label>
-    <input type="text" id="budget" name="budget" placeholder="budget">
+    <label for="Budget">Budget</label>
+      <select name="Budget" id="Budget">
+        <option value="Blank"></option>
+        <option value="Free">Free</option>
+        <option value="Affordable">Affordable</option>
+        <option value="Expensive">Expensive</option>
+
+      </select>
+    
 
     <label for="career-interests">Career Interests</label>
-      <select name="career-interests" id="career-interests">
-        <option value="computer-science">Computer Science</option>
-        <option value="construction">construction</option>
-        <option value="aviation">aviation</option>
+      <select name="career-interests" id="career-interests" onchange="myfunction()">
+        <option value="Blank"></option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Construction">Construction</option>
+        <option value="Aviation">Aviation</option>
+        <option value="Agriculture">Agriculture</option>
+        <option value="Professional Driver">Professional Driver</option>
+        <option value="Welding">Welding</option>
+        <option value="Religious Leader">Religious Leader</option>
+
       </select>
 
-    <input type="submit" value="submit">
+    <button type="Submit" onClick="myFunction()"> Submit</button>
     </form>
+
+    <p id="demo"></p>
+
   </div>
+  <script>
+      function myFunction() {
+        var x = document.getElementById("career-interests").value;
+        document.getElementById("demo").innerHTML = "You selected: " + x;
+      }
+  </script>
 </body>
 </html>
