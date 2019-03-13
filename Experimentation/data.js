@@ -21,7 +21,8 @@ const geekwiseResource = new resource(
     "700 Van Ness Ave, Fresno, CA 93721",
     "(559) 500-3305 ext. 222",
     false, true, true,
-    "School"
+    "None",
+    "not esl"
 )
 
 resources.push(geekwiseResource);
@@ -35,7 +36,8 @@ const fccResource = new resource(
     "1101 E University Ave, Fresno, CA 93741",
     "(559) 442-4600",
     false, false, true,
-    "School"
+    "HSGrad",
+    "esl"
 )
 
 resources.push(fccResource);
@@ -49,7 +51,8 @@ const cccResource = new resource(
     "10309 N Willow Ave, Fresno, CA 93730",
     "(559) 325-5200",
     false, false, true,
-    "School"
+    "HSGrad",
+    "esl"
 )
 
 resources.push(cccResource);
@@ -63,7 +66,8 @@ const fasResource = new resource(
     "2500 Stanislaus St., Fresno, CA 93721",
     "(559) 457-6000",
     true, true, true,
-    "School"
+    "Dropout",
+    "esl"
 )
 
 resources.push(fasResource);
@@ -77,7 +81,8 @@ const atpResource = new resource(
     "3132 E. Fairmont Ave., Fresno, CA  93726",
     "(559) 248-7150",
     true, true, true,
-    "School"
+    "None",
+    "not esl"
 ) 
 
 resources.push(atpResource);
@@ -91,7 +96,8 @@ const classResource = new resource(
     "2698 N Brawley, Fresno, CA 93722",
     "(559) 276-5230",
     true, true, true,
-    "School"
+    "Dropout",
+    "esl"
 )
 
 resources.push(classResource);
@@ -105,7 +111,8 @@ const caeResource = new resource(
     "1452 David E. Cook Way Clovis, CA 93611",
     "(559) 327-2800",
     true, true, true,
-    "School"
+    "Dropout",
+    "esl"
 )
 
 resources.push(caeResource);
@@ -113,12 +120,14 @@ resources.push(caeResource);
 //California Christian College
 const chrcolResource = new resource(
     "https://www.calchristiancollege.edu/",
-    ".images/chrcol.jpeg",
+    "./images/chrcol.jpeg",
+    "California Christian College",
     "The mission of California Christian College is to offer academic programs that develop Christian leaders to serve Christ both in the Church and in society.",
     "5364 E. Belmont Ave. Fresno, CA 93727",
     "(559) 251-4215",
     false, false, true,
-    "School"
+    "HSGrad",
+    "not esl"
 )
 
 resources.push(chrcolResource);
@@ -132,7 +141,8 @@ const psrResource = new resource(
     "1300 W Shaw Ave #1a, Fresno, CA 93711",
     "(866) 478-0609",
     false, true, true,
-    "School"
+    "HSGrad",
+    "not esl"
 )
 
 resources.push(psrResource);
@@ -146,7 +156,8 @@ const proResource = new resource(
     "1815 Van Ness Ave, Fresno, CA 93721",
     "(559) 499-2140",
     true, true, true,
-    "School"
+    "HSGrad",
+    "not esl"
 )
 
 resources.push(proResource);
@@ -160,7 +171,8 @@ const aciResource = new resource(
     "2953 S. East Avenue, Fresno, California 93725",
     "(559) 407-9191",
     false, false, false,
-    "School"
+    "HSGrad",
+    "not esl"
 )
 
 resources.push(aciResource);
@@ -174,7 +186,8 @@ const jbaResource = new resource(
     "4955 E Andersen Ave, Fresno, CA 93727",
     "(559) 293-4988",
     false, false, true,
-    "School"
+    "None",
+    "not esl"
 )
 
 resources.push(jbaResource);
@@ -188,12 +201,13 @@ const cosResource = new resource(
     "1655 David E Cook Way Clovis, CA 93611",
     "",
     false, false, false,
-    "Online"
+    "HSGrad",
+    "not esl"
 )
 
 resources.push(cosResource)
 
-function resource(hlink, imgSrc, name, description, location, phoneNumber, free, affordable, expensive, tag) {
+function resource(hlink, imgSrc, name, description, location, phoneNumber, free, affordable, expensive, education, esl) {
     this.hlink = hlink;
     this.imgSrc = imgSrc;
     this.name = name;
@@ -203,7 +217,8 @@ function resource(hlink, imgSrc, name, description, location, phoneNumber, free,
     this.free = free;
     this.affordable = affordable;
     this.expensive = expensive;
-    this.tag = tag;
+    this.education = education;
+    this.esl = esl;
     return this;
 }
 
