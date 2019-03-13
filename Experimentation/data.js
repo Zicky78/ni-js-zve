@@ -87,7 +87,6 @@ const classResource = new resource(
     "https://cl.centralunified.org/",
     ".images/class.png",
     "C.L.A.S.S",
-    //Need description
     "An alternative education school dedicated to student persistence, credit completion, and high school graduation. Students who are eligible can easily enroll in Career Technical Education programs.",
     "2698 N Brawley, Fresno, CA 93722",
     "(559) 276-5230",
@@ -100,7 +99,7 @@ resources.push(classResource);
 // Clovis Adult Education
 const caeResource = new resource(
     "https://clovisadult.cusd.com/",
-    ".image/cae.jpeg",
+    "./images/cae.jpeg",
     "Clovis Adult Education",
     "Clovis Adult Education provides resources for GED Completion, Adult Basic Education, and English as a Second Language",
     "1452 David E. Cook Way Clovis, CA 93611",
@@ -169,7 +168,7 @@ resources.push(aciResource);
 //JB Aeronautics | Career Pilot Training
 const jbaResource = new resource(
     "https://www.jbaeronautics.com/",
-    ".images/jba.png",
+    "./images/jba.png",
     "JB Aeronautics Career Pilot Training",
     "JB Aeronautics provides a variety of flying lessons and certifications for aspiring pilots",
     "4955 E Andersen Ave, Fresno, CA 93727",
