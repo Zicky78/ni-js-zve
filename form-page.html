@@ -51,7 +51,7 @@
 <body>
 
   <div class="container-fluid">
-  <form>
+  <form onsubmit="return false">
     <label for="Level-Of-Education">Level of Education</label>
     <select name="Level-Of-Education" id="Level-Of-Education">
       <option value="Blank"></option>
@@ -96,7 +96,7 @@
           <input type="radio" name="radio">
           <span class="checkmark"></span>
         </label>
-    <button type="Submit" onClick="myFunction()"> Submit</button>
+    <input type="Submit" onClick="myFunction()"> Submit</input>;
     </form>
 
     <p id="demo"></p>
@@ -107,6 +107,20 @@
         var x = document.getElementById("career-interests").value;
         document.getElementById("demo").innerHTML = "You selected: " + x;
       }
+  </script>
+
+  <script>
+   // let form = document.createElement('form');
+   // form.action = 'https://google.com/search';
+   // form.method = 'GET';
+
+    //form.innerHTML = '<input name="q" value="test">';
+
+    // the form must be in the document to submit it
+   // document.body.append(form);
+
+   // form.submit();
+  
   </script>
 </body>
 </html>
