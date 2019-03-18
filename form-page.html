@@ -53,7 +53,7 @@
   <div class="container-fluid">
   <form onsubmit="return false">
     <label for="Level-Of-Education">Level of Education</label>
-    <select name="Level-Of-Education" id="Level-Of-Education">
+    <select name="Level-Of-Education" id="Level-Of-Education" onchange="myFunction()">
       <option value="Blank"></option>
       <option value="High School Graduate">High School Graduate</option>
       <option value="High School Dropout">High School Dropout</option>
@@ -108,6 +108,21 @@
         document.getElementById("demo").innerHTML = "You selected: " + x;
       }
   </script>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("Budget").value;
+      document.getElementById("demo").innerHTML = "You selected: " + x;
+    }
+  </script>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("Level-Of-Education").value;
+      document.getElementById("demo").innerHTML = "You selected: " + x;
+    }
+  </script>
+  
 
   <script>
    // let form = document.createElement('form');

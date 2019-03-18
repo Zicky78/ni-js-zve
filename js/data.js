@@ -220,4 +220,3 @@ function resource(hlink, imgSrc, name, description, location, phoneNumber, free,
     this.education = education;
     this.esl = esl;
     return this;
-}

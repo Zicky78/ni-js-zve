@@ -1,5 +1,5 @@
-function animatedForm() {
-    const arrows = document.querySelectorAll
+function myFunction() {
+    document.getElementsByTagName("")
     ("")
 }
 
