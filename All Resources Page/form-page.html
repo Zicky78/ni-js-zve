@@ -121,18 +121,7 @@
     }
   </script>
 
-<script>
-  function formSubmit() {
-    
-    document.getElementById("submitButton").onclick = function() {
-      var x = document.getElementById("Level-Of-Education").value;
-    console.log(x);
-    localStorage.setItem('education', x);
-    console.log(localStorage.getItem('education'));
-    window.location.href = "carousel.html";
-    };
-  }
-</script>
+<script src="formSubmit.js"></script>
 
 
   <script>
