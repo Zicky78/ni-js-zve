@@ -1,0 +1,38 @@
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: rgba(17, 17, 17, .5);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  
+  .navbar-default .navbar-nav > li > a {
+    color: #fcfcfc;
+    
+  }
+  
+  .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+    color: #36f82f;
+    background-color: rgba(17, 17, 17, .2);
+  }
+  
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  
+  .nav li a:hover {
+    background-color:  transparent;
+  }
+  
+  nav.navbar {
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+  }
+  
+  .navbar-brand > img {
+    
+    background-color: #000000;
+  }
