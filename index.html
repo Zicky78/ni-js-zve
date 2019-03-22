@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>Victor's branch</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
 
   * {
@@ -28,15 +29,12 @@
     right: 0;
     bottom: 0;
     min-width: 100%;
-    min-height: 100%;
     opacity: 0.5;
   }
-  .content {
+  .container-fluid {
     position: absolute;
-    bottom: 120px;
     color: #f1f1f1;
     width: 100%;
-    padding: 20px;
     text-align: center;
     margin: auto;
     color:#093b63;
@@ -81,18 +79,16 @@
 <body>
 
 
-<div class="container-fluid">
+<header class="container-fluid">
   <div class="logo">
-
-  </div>
-
-<div class="content">
-  <p>Your local source to a productive and prosperous future.</p>
+  <div class="content">
+    <span>Your local source to a productive and prosperous future.</span>
   <!--<button id="myBtn" onclick="myFunction()">Get your school on</button>-->
-  <button id="button"class="btn btn-info">Get your school on</button>
-
+    <a class="btn btn-info" role="button" href="form-page.html"></a>
+    <button id="button"class="btn btn-info">Get your school on</button>
+    </div>
   </div>
-</div>
+</header>
 <!--<script>
   var video = document.getElementById("myVideo");
   var btn = document.getElementById("myBtn");
