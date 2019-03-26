@@ -2,7 +2,7 @@ const educationInput = localStorage.getItem('education');
 const budgetInput = localStorage.getItem('budget');
 const careerInput = localStorage.getItem('career');
 const eslInput = localStorage.getItem('esl');
-console.table([educationInput, budgetInput, careerInput]);
+console.table([educationInput, budgetInput, careerInput, eslInput]);
 
 const finalResources = [];
 const tempResources = [];
@@ -30,6 +30,10 @@ function sort() {
             }
         }
         selectRandom();
+    }
+
+    else {
+        finalResources.push(resources[Math.floor(Math.random() * resources.length)]);
     }
 
     //Clears the temp resources
@@ -159,4 +163,4 @@ sort();
 console.log('Selected Esl / Other Resource: ', finalResources[0].name);
 console.log('Selected Career Resource: ', finalResources[1].name);
 console.log('Selected Education Resource: ', finalResources[2].name);
-//console.log('Selected Budget Resource: ', finalResources[3].name);
+console.log('Selected Budget Resource: ', finalResources[3].name);
