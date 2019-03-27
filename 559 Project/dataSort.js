@@ -1,28 +1,42 @@
+/*** Data Sorting ***/
+
+//Variables to hold local storage data from form
 const educationInput = localStorage.getItem('education');
 const budgetInput = localStorage.getItem('budget');
 const careerInput = localStorage.getItem('career');
 const eslInput = localStorage.getItem('esl');
 console.table([educationInput, budgetInput, careerInput, eslInput]);
 
+//Arrays to hold temporary and final resources
 const finalResources = [];
 const tempResources = [];
 
+//Clears temp resources
 function clearTempResources() {
     tempResources.length = 0;
 }
 
+//Selects a random temporary resource and pushes it into the final resources array
 function selectRandom() {
+    //Varibale that holds the randomly selected resource
+    //Randomly selected between tempResources[0] and tempResources[length-1]
     let final = tempResources[Math.floor(Math.random() * tempResources.length)];
+    //If the randomly selected resource is not already in the final array, it will be added to it
+    //If the resource IS in the array, recursively calls selectRandom() to get another random resource
     if(!finalResources.includes(final)) {
+        //Pushes the selected resource into the array
         finalResources.push(final);
     } else {
         selectRandom();
     }
 }
 
+//The main function of this file. Sorts the resources based on the form answers
 function sort() {
 
     //Sorts for esl
+    //If esl is Yes, loops through the resources and adds all esl resources to the temporary array,
+    //then calls selectRandom() to pick one
     if(eslInput === "Yes") {
         for(i = 0; i < resources.length; i++) {
             if(resources[i].esl === "esl") {
@@ -32,6 +46,7 @@ function sort() {
         selectRandom();
     }
 
+    //If esl is No, picks a random resource between resources[0] and resources[length-1]
     else {
         finalResources.push(resources[Math.floor(Math.random() * resources.length)]);
     }
@@ -40,6 +55,7 @@ function sort() {
     clearTempResources();
 
     //Sorts for career interest
+    //Switch statement reads the career interest and puts the appropriate resource into the final array
     switch(careerInput) {
 
         case "Computer Science":
@@ -70,9 +86,13 @@ function sort() {
             finalResources.push(chrcolResource);
         break;
     }
+
+    //Clearsthe temp resources
     clearTempResources();
 
     //Sorts for education
+    //Switch statement reads the education answer and puts all matching resources into the temp array,
+    //then calls selectRandom() to pick one
     switch(educationInput) {
 
         case "High School Graduate":
@@ -125,6 +145,8 @@ function sort() {
     clearTempResources();
 
     //Sorts for budget
+    //Switch statement reads the budget answer and puts all matching resources into the temp array,
+    //then calls selectRandom() to pick one
     switch(budgetInput) {
 
         case "Free":
@@ -160,9 +182,10 @@ function sort() {
     }
 }
 
+//Calls the sort function
 sort();
 
-console.log(finalResources);
+//Logs of the selected resources
 console.log('Selected Esl / Other Resource: ', finalResources[0].name);
 console.log('Selected Career Resource: ', finalResources[1].name);
 console.log('Selected Education Resource: ', finalResources[2].name);
