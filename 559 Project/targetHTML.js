@@ -1,3 +1,7 @@
+/*** HTML Targeting ***/
+
+//Targets the html and puts in the resource data
+//On each loop, it targets the id on the carousel page, and sets the text to the corresponding information
 function target() {
     for(i = 0; i < 4; i++) {
         document.getElementById(`c1-name${i+1}`).innerHTML = finalResources[i].name;
