@@ -12,15 +12,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
 
-  * {
-    box-sizing: border-box;
-    }
-
   body {
-    margin: 0;
     font-family: 'Hind Madurai', sans-serif;
     font-size: 24px;
-    margin: auto;
+    display:inline-block;
 
   }
 
@@ -31,26 +26,29 @@
     min-width: 100%;
     opacity: 0.5;
   }
-  .container-fluid {
-    position: absolute;
+  .content{
+    display:inline-grid;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
     color: #f1f1f1;
+    background:rgb(0,0,0,0.5)
     width: 100%;
+    padding: 20px;
     text-align: center;
     margin: auto;
     color:#093b63;
 
 
   }
-  .logo {
-    background-position: center;
-    background-image: url("the-559-resource.png");
-    background-repeat: no-repeat;
-    width: 100%;
-    color:#f1f1f1;
-    position:absolute;
-    text-align: center;
-    padding:250px;
-    background-size:600px;
+  h3{
+    text-align:center;
+  }
+
+  img {
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
 
   }
 
@@ -62,6 +60,7 @@
     background: #093b63;
     color: #fff;
     cursor: pointer;
+    text-align: center;
   }
 
   #button:hover {
@@ -78,32 +77,16 @@
 
 <body>
 
+    <div class="logo">
+        <img src="the-559-resource.png" alt="img/png" style="width:auto;">
+    </div>
 
-<header class="container-fluid">
-  <div class="logo">
   <div class="content">
-    <span>Your local source to a productive and prosperous future.</span>
-  <!--<button id="myBtn" onclick="myFunction()">Get your school on</button>-->
+    <h3>Your local source to a productive and prosperous future.</h3>
     <a class="btn btn-info" role="button" href="form-page.html"></a>
     <button id="button"class="btn btn-info">Get your school on</button>
-    </div>
   </div>
-</header>
-<!--<script>
-  var video = document.getElementById("myVideo");
-  var btn = document.getElementById("myBtn");
 
-  function myFunction() {
-    if (video.paused) {
-      video.play();
-      btn.innerHTML = "Pause";
-    }
-    else {
-      video.pause();
-      btn.innerHTML = "Play";
-    }
-  }
-</script>-->
 
 </body>
 </html>
