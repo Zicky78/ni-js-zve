@@ -24,14 +24,12 @@ function sort() {
 
     //Sorts for esl
     if(eslInput === "Yes") {
-        console.log('yes');
         for(i = 0; i < resources.length; i++) {
             if(resources[i].esl === "esl") {
                 tempResources.push(resources[i]);
             }
         }
         selectRandom();
-        console.log(finalResources[0]);
     }
 
     else {
@@ -40,7 +38,6 @@ function sort() {
 
     //Clears the temp resources
     clearTempResources();
-
 
     //Sorts for career interest
     switch(careerInput) {
@@ -62,7 +59,6 @@ function sort() {
         break;
 
         case "Professional Driver":
-        console.log('pushed aciResource');
             finalResources.push(aciResource);
         break;
 
@@ -74,7 +70,6 @@ function sort() {
             finalResources.push(chrcolResource);
         break;
     }
-    console.log(finalResources[1]);
     clearTempResources();
 
     //Sorts for education
@@ -125,7 +120,7 @@ function sort() {
             selectRandom();
         break;
     }
-    console.log(finalResources[2]);
+
     //Clears temp resources
     clearTempResources();
 
@@ -163,7 +158,6 @@ function sort() {
             selectRandom();
         break;
     }
-    console.log(finalResources[3]);
 }
 
 sort();
