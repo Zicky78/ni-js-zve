@@ -1,16 +1,36 @@
+/*** Database ***/
+
+//Array to store resources in
 const resources = [];
 
-//Blank Resource
+/* Resource Template
 const blankResource = new resource(
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    false, false, false,
-    ""
-)
+    "url of resource",
+    "image path",
+    "name of resource",
+    "description of resource",
+    "address of resource",
+    "phone number of resource",
+    free, affordable, expensive,
+    "educational requirement",
+    "whether or not resource offers esl classes"
+)*/
+
+//Function to assign resource to variables easier
+function resource(hlink, imgSrc, name, description, location, phoneNumber, free, affordable, expensive, education, esl) {
+    this.hlink = hlink;
+    this.imgSrc = imgSrc;
+    this.name = name;
+    this.description = description;
+    this.location = location;
+    this.phoneNumber = phoneNumber;
+    this.free = free;
+    this.affordable = affordable;
+    this.expensive = expensive;
+    this.education = education;
+    this.esl = esl;
+    return this;
+}
 
 //Geekwise
 const geekwiseResource = new resource(
@@ -209,18 +229,5 @@ const cosResource = new resource(
 resources.push(cosResource)
 */
 
-function resource(hlink, imgSrc, name, description, location, phoneNumber, free, affordable, expensive, education, esl) {
-    this.hlink = hlink;
-    this.imgSrc = imgSrc;
-    this.name = name;
-    this.description = description;
-    this.location = location;
-    this.phoneNumber = phoneNumber;
-    this.free = free;
-    this.affordable = affordable;
-    this.expensive = expensive;
-    this.education = education;
-    this.esl = esl;
-    return this;
-}
+
 
