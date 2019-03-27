@@ -24,12 +24,14 @@ function sort() {
 
     //Sorts for esl
     if(eslInput === "Yes") {
+        console.log('yes');
         for(i = 0; i < resources.length; i++) {
             if(resources[i].esl === "esl") {
                 tempResources.push(resources[i]);
             }
         }
         selectRandom();
+        console.log(finalResources[0]);
     }
 
     else {
@@ -59,7 +61,8 @@ function sort() {
             finalResources.push(proResource);
         break;
 
-        case "Proffesional Driver":
+        case "Professional Driver":
+        console.log('pushed aciResource');
             finalResources.push(aciResource);
         break;
 
@@ -71,7 +74,7 @@ function sort() {
             finalResources.push(chrcolResource);
         break;
     }
-
+    console.log(finalResources[1]);
     clearTempResources();
 
     //Sorts for education
@@ -79,7 +82,7 @@ function sort() {
 
         case "High School Graduate":
             for(i = 0; i < resources.length; i++) {
-                if(resources[i].education === "High School Graduate") {
+                if(resources[i].education === "High School Graduate" || resources[i].education === "None") {
                     tempResources.push(resources[i]);
                 }
             }
@@ -88,7 +91,7 @@ function sort() {
         
         case "High School Dropout":
             for(i = 0; i < resources.length; i++) {
-                if(resources[i].education === "High School Dropout") {
+                if(resources[i].education === "High School Dropout" || resources[i].education === "None") {
                     tempResources.push(resources[i]);
                 }
             }
@@ -97,7 +100,7 @@ function sort() {
 
         case "Below High School":
             for(i = 0; i < resources.length; i++) {
-                if(resources[i].education === "Below High School") {
+                if(resources[i].education === "Below High School" || resources[i].education === "None") {
                     tempResources.push(resources[i]);
                 }
             }
@@ -106,7 +109,7 @@ function sort() {
 
         case "No High School":
             for(i = 0; i < resources.length; i++) {
-                if(resources[i].education === "No High School") {
+                if(resources[i].education === "No High School" || resources[i].education === "None") {
                     tempResources.push(resources[i]);
                 }
             }
@@ -115,14 +118,14 @@ function sort() {
 
         case "Some College":
             for(i = 0; i < resources.length; i++) {
-                if(resources[i].education === "Some College") {
+                if(resources[i].education === "Some College" || resources[i].education === "None") {
                     tempResources.push(resources[i]);
                 }
             }
             selectRandom();
         break;
     }
-
+    console.log(finalResources[2]);
     //Clears temp resources
     clearTempResources();
 
@@ -130,6 +133,7 @@ function sort() {
     switch(budgetInput) {
 
         case "Free":
+            
             for(i = 0; i < resources.length; i++) {
                 if(resources[i].free === true) {
                     tempResources.push(resources[i]);
@@ -139,11 +143,14 @@ function sort() {
         break;
 
         case "Affordable":
+        
             for(i = 0; i < resources.length; i++) {
                 if(resources[i].affordable === true) {
+                    
                     tempResources.push(resources[i]);
                 }
             }
+            
             selectRandom();
         break;
 
@@ -156,10 +163,12 @@ function sort() {
             selectRandom();
         break;
     }
+    console.log(finalResources[3]);
 }
 
 sort();
 
+console.log(finalResources);
 console.log('Selected Esl / Other Resource: ', finalResources[0].name);
 console.log('Selected Career Resource: ', finalResources[1].name);
 console.log('Selected Education Resource: ', finalResources[2].name);

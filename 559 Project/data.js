@@ -66,7 +66,7 @@ const fasResource = new resource(
     "2500 Stanislaus St., Fresno, CA 93721",
     "(559) 457-6000",
     true, true, true,
-    "Dropout",
+    "High School Droput",
     "esl"
 )
 
@@ -96,7 +96,7 @@ const classResource = new resource(
     "2698 N Brawley, Fresno, CA 93722",
     "(559) 276-5230",
     true, true, true,
-    "Dropout",
+    "High School Dropout",
     "esl"
 )
 
@@ -111,7 +111,7 @@ const caeResource = new resource(
     "1452 David E. Cook Way Clovis, CA 93611",
     "(559) 327-2800",
     true, true, true,
-    "Dropout",
+    "High School Dropout",
     "esl"
 )
 
@@ -141,7 +141,7 @@ const psrResource = new resource(
     "1300 W Shaw Ave #1a, Fresno, CA 93711",
     "(866) 478-0609",
     false, true, true,
-    "High School Graduate",
+    "None",
     "not esl"
 )
 
@@ -156,7 +156,7 @@ const proResource = new resource(
     "1815 Van Ness Ave, Fresno, CA 93721",
     "(559) 499-2140",
     true, true, true,
-    "High School Graduate",
+    "None",
     "not esl"
 )
 
