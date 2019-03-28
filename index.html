@@ -15,7 +15,9 @@
   body {
     font-family: 'Hind Madurai', sans-serif;
     font-size: 24px;
-    display:inline-block;
+    display:grid;
+    padding:auto;
+    margin: auto;
 
   }
 
@@ -26,21 +28,21 @@
     min-width: 100%;
     opacity: 0.5;
   }
-  .content{
-    display:inline-grid;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
+  .jumbotron{
+    display:table-cell;
+    vertical-align: middle;
+    position:relative;
     color: #f1f1f1;
     background:rgb(0,0,0,0.5)
     width: 100%;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     margin: auto;
     color:#093b63;
 
 
   }
+
   h3{
     text-align:center;
   }
@@ -49,6 +51,10 @@
     display:block;
     margin-left: auto;
     margin-right:auto;
+    width:auto;
+    height:auto;
+    padding-top: 30px;
+
 
   }
 
@@ -70,22 +76,22 @@
 </style>
 </head>
 
-
-<video autoplay muted loop id="myVideo">
-  <source src="pencil.mp4" type="video/mp4">
-</video>
-
 <body>
 
-    <div class="logo">
-        <img src="the-559-resource.png" alt="img/png" style="width:auto;">
-    </div>
+  <video autoplay muted loop id="myVideo">
+    <source src="pencil.mp4" type="video/mp4">
+  </video>
 
-  <div class="content">
-    <h3>Your local source to a productive and prosperous future.</h3>
-    <a class="btn btn-info" role="button" href="form-page.html"></a>
-    <button id="button"class="btn btn-info">Get your school on</button>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="logo">
+          <img src="the-559-resource.png" alt="img/png" style="width:300px;">
+          <h3>Your local source to a productive and prosperous future.</h3>
+          <a class="btn btn-info" role="button" href="form-page.html"></a>
+          <button id="button"class="btn btn-info">Get your school on</button>
+    </div>
   </div>
+</div>
 
 
 </body>
