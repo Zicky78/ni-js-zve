@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Esteban">
+    <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Form page</title>
+</head>
+<style>
+
+  .site-wrapper{
+    display:table;
+    widows: 100%;
+    height:100%;
+    min-height:100%;
+  }
+
+  img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+     
+  }
+  body{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, black,white,black);
+    margin:0;
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+   
+  }
+
+
+  .container-form{
+    padding-top: 120px;
+    padding-bottom: 5px;
+    display:inline-block;
+    height:100%;
+    width: 50%;
+    min-height:100%
+  }
+  input[type=text],select{
+    width:100%;
+    padding:14px 20px;
+    margin:8px 0;
+    border:none;
+    border-radius:4px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    resize: vertical;
+    
+  }
+  label{
+    display:inline-block;
+    width:100%;
+  }
+
+  .ESL Classes{
+    margin-top:6px;
+  }
+  input[type=submit] {
+    width: 80%;
+    background-color: #093b63;
+    color: white;
+    padding: 14px 20px;
+    margin: 26px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display:inline-block;
+    
+  }
+
+</style>
+
+<body>
+<!--Navbar Section-->
+<div>
+    <nav class="navbar navbar-default navbar-fixed-top navigation-clean" style="padding: 15px;">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand" href="#" style="margin-left: -53px;padding: 10px;height: 50px;margin-top: -57px;font-style: normal;font-family: Esteban, serif;"><img class="img-responsive" src="assets/img/the-559-resource.png" width="200px" height="200px" style="height: 150px;margin-left: 25px;">The 559 Resource</a>
+                <button
+                    class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1" style="margin-right: -5px;"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="form-page.html">Get Started</a></li>
+                    <li role="presentation"><a href="all-resources-page.html">Resources</a></li>
+                    <li role="presentation"><a href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    <div class="container-form">
+      <form onsubmit="return false">
+        <label for="Level-Of-Education">Level of Education</label>
+        <select name="Level-Of-Education" id="Level-Of-Education" onchange="myFunction1()">
+          <option value="Blank"></option>
+          <option value="High School Graduate">High School Graduate</option>
+          <option value="High School Dropout">High School Dropout</option>
+          <option value="Below High School">Below High School</option>
+          <option value="No Education">No Education</option>
+          <option value="Some College">Some College</option>
+
+        </select>
+
+
+        <label for="Budget">Budget</label>
+        <select name="Budget" id="Budget" onchange="myFunction3()">
+          <option value="Blank"></option>
+          <option value="Free">Free</option>
+          <option value="Affordable">Affordable</option>
+          <option value="Expensive">Expensive</option>
+
+        </select>
+
+
+        <label for="career-interests">Career Interests</label>
+        <select name="career-interests" id="career-interests" onchange="myFunction2()">
+          <option value="Blank"></option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Construction">Construction</option>
+          <option value="Aviation">Aviation</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Professional Driver">Professional Driver</option>
+          <option value="Welding">Welding</option>
+          <option value="Religious Leader">Religious Leader</option>
+
+        </select>
+
+        <label for="ESL Classes"> ESL Classes </label>
+        <select name="ESL Classes" id="ESL Classes" onchange="myFunction4()">
+          <option value="Blank"></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+
+
+
+        <input type="Submit" onClick="formSubmit()"></input>
+      </form>
+
+      <p id="demo"></p>
+
+    </div>
+  </div>
+
+  
+  <footer id='footer'>
+      <div class="row">
+          <div class="col-md-4 col-sm-6 footer-navigation">
+              <h3><a href="#">The 559 Resource</a></h3>
+              <p class="company-name">The 559 Resource © 2019</p>
+          </div>
+          <div class="col-md-4 col-sm-6 footer-contacts">
+              <div><span class="fa fa-map-marker footer-contacts-icon"> <a href="https://goo.gl/maps/DuLtf2hbgzt" target="_blank"></a></span>
+                  <p><span class="new-line-span">700 Van Ness Ave<br></span>Fresno, CA</p>
+              </div>
+              <div><i class="fa fa-phone footer-contacts-icon"></i>
+                  <p class="footer-center-info email text-left"> +1 555 123456</p>
+              </div>
+              <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                  <p> <a href="#" target="_blank">the559resource@company.com</a></p>
+              </div>
+          </div>
+          <div class="clearfix visible-sm-block"></div>
+          <div class="col-md-4 footer-about">
+              <h4>About the company</h4>
+              <p> The 559 Resource is an online source that helps individuals locate local educational and career services that fits their needs. Our online survey will help guide those individuals to the "right" path of options, depending on their interest
+                  and needs.&nbsp;</p>
+              <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+          </div>
+      </div>
+  </footer>
+
+
+  <script>
+    function myFunction2() {
+      var x = document.getElementById("career-interests").value;
+      document.getElementById("demo").innerHTML = "You selected: " + x;
+    }
+</script>
+
+<script>
+  function myFunction3() {
+    var x = document.getElementById("Budget").value;
+    document.getElementById("demo").innerHTML = "You selected: " + x;
+  }
+</script>
+
+<script>
+  function myFunction1() {
+    var x = document.getElementById("Level-Of-Education").value;
+    document.getElementById("demo").innerHTML = "You selected: " + x;
+  }
+</script>
+<script>
+  function myFunction4() {
+    var x = document.getElementById("ESL Classes").value;
+    document.getElementById("demo").innerHTML = "You selected: " + x;
+  }
+</script>
+
+<script src="formSubmit.js"></script>
+
+
+    <script>
+      // let form = document.createElement('form');
+      // form.action = 'https://google.com/search';
+      // form.method = 'GET';
+
+      //form.innerHTML = '<input name="q" value="test">';
+
+      // the form must be in the document to submit it
+      // document.body.append(form);
+
+      // form.submit();
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+</body>
+
+</html>

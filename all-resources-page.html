@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>All resources</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Esteban">
+    <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <style>
+        
+        .column-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            overflow: hidden;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            width: 30%;
+            height: 100%;
+            background-image: linear-gradient(to bottom,white,white,rgb(140, 140, 140),#2e2e2e);
+            padding: 1em;
+            padding-top: 6em;
+            padding-bottom: 1000px;
+            margin-bottom: -1000px;
+        }
+
+        .section-header {
+            color: black;
+            text-decoration: underline #093b63;
+            padding-bottom: 1em;
+        }
+
+        .content-header {
+            color: black;
+            text-decoration: underline #093b63;
+        }
+
+        .content-container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        #img {
+            height: 10em;
+            width: 10em;
+            border: .25em solid #093b63;
+            float: left;
+        }
+
+        .desc {
+            padding-left: .75em;
+            padding-top: .5em;
+            font-size: .9em;
+            color: black;
+            font-weight: bold;
+        }
+
+        .blue-paragraph {
+            color: #093b63;
+        }
+
+        a {
+            color: #093b63;
+        }
+
+        @media only screen and (max-width: 1400px) {
+            .content-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            #img {
+                float: none;
+            }
+        }
+
+        @media only screen and (max-width: 890px) {
+            .column-container {
+                flex-wrap: wrap;
+            }
+            .content-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .column {
+                width: 100%;
+                background-image: none;
+            }
+            #img {
+                float: left;
+            }
+            body {
+                background-image:linear-gradient(to bottom, white, white,white, rgb(140, 140, 140),  rgb(140, 140, 140),rgb(119, 119, 119),rgb(97, 97, 97), #2e2e2e);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Navbar Section-->
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top navigation-clean" style="padding: 15px;">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand" href="#" style="margin-left: -53px;padding: 10px;height: 50px;margin-top: -57px;font-style: normal;font-family: Esteban, serif;"><img class="img-responsive" src="assets/img/the-559-resource.png" width="200px" height="200px" style="height: 150px;margin-left: 25px;">The 559 Resource</a>
+                    <button
+                        class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1" style="margin-right: -5px;"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="form-page.html">Get Started</a></li>
+                        <li role="presentation"><a href="all-resources-page.html">Resources</a></li>
+                        <li role="presentation"><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Column Section-->
+    <div class='column-container'>
+
+        <!--Column One-->
+        <div class='column'>
+            <h3 class='section-header'>Adult Education</h3>
+            
+            <h4 class='content-header'><a href="https://clovisadult.cusd.com/" target="blank_">Clovis Adult Education</a></h4>
+            <div class='content-container'>
+                <a href="https://clovisadult.cusd.com/" target="blank_"><img id="img" src="./images/cae.jpg"></a>
+                <p class="desc">Clovis Adult Education provides resources for GED Completion, Adult Basic Education, and English as a Second Language
+                <br>
+                <br>
+                <span class="blue-paragraph">Location:</span> 1452 David E. Cook Way Clovis, CA 93611
+                <br>
+                <br>
+                <span class="blue-paragraph">Phone Number:</span> (559) 327-2800
+                </p>
+            </div>
+
+            <br>
+
+            <h4 class='content-header'><a href="https://cl.centralunified.org/" target="blank_">C.L.A.S.S</a></h4>
+            <div class='content-container'>
+                <a href="https://cl.centralunified.org/" target="blank_"><img id="img" src="./images/class.png"></a>
+                <p class="desc">An alternative education school dedicated to student persistence, credit completion, and high school graduation. Students who are eligible can easily enroll in Career Technical Education programs
+                <br>
+                <br>
+                <span class="blue-paragraph">Location:</span> 2698 N Brawley, Fresno, CA 93722
+                <br>
+                <br>
+                <span class="blue-paragraph">Phone Number:</span> (559) 276-5230
+                </p>
+            </div>
+
+            <br>
+
+            <h4 class='content-header'><a href="https://www.fresnounified.org/schools/fas" target="blank_">Fresno Adult School</a></h4>
+            <div class='content-container'>
+                <a href="https://www.fresnounified.org/schools/fas" target="blank_"><img id="img" src="./images/fas.png"></a>
+                <p class="desc">Fresno Adult School offers a whide variety of Adult classes such as English as a Second Language, Adult Basic Education, and GED Preparation
+                <br>
+                <br>
+                <span class="blue-paragraph">Location:</span> 2500 Stanislaus St., Fresno, CA 93721
+                <br>
+                <br>
+                <span class="blue-paragraph">Phone Number:</span> (559) 457-6000
+                </p>
+            </div>
+
+            <br>
+
+            <h4 class='content-header'><a href="https://www.fresnounified.org/dept/specialeducation/Pages/Adult-Transition-Program-on-Fairmont.aspx" target="blank_">Adult Transition Program</a></h4>
+            <div class='content-container'>
+                <a href="https://www.fresnounified.org/dept/specialeducation/Pages/Adult-Transition-Program-on-Fairmont.aspx" target="blank_"><img id="img" src="./images/atp.png"></a>
+                <p class="desc">The Adult Transition Program provides training, support, and education to people with developmental disabilites to provide them the skills to become independent
+                <br>
+                <br>
+                <span class="blue-paragraph">Location:</span> 3132 E. Fairmont Ave., Fresno, CA  93726
+                <br>
+                <br>
+                <span class="blue-paragraph">Phone Number:</span> (559) 248-7150
+                </p>
+            </div>
+
+            <br>
+
+        </div>
+
+        <!--Column Two-->
+        <div class='column'>
+            <h3 class='section-header'>Higher Education</h3>
+
+            <h4 class='content-header'><a href="https://www.fresnocitycollege.edu" target="blank_">Fresno City College</a></h4>
+            <div class='content-container'>
+                <a href="https://www.fresnocitycollege.edu" target="blank_"><img id="img" src="./images/fcc.png"></a>
+                <p class="desc">Fresno's best community college, offering many classes for career paths, and offering transfer opportunities to universities
+                <br>
+                <br>
+                <span class="blue-paragraph">Location:</span> 1101 E University Ave, Fresno, CA 93741
+                <br>
+                <br>
+                <span class="blue-paragraph">Phone Number:</span> (559) 442-4600
+                </p>
+            </div>
+
+            <br>
+
+            <h4 class='content-header'><a href="https://www.cloviscollege.edu" target="blank_">Clovis Community College</a></h4>
+            <div class='content-container'>
+                <a href="https://www.cloviscollege.edu" target="blank_"><img id="img" src="./images/ccc.jpg"></a>
+                <p class="desc">Clovis' best community college, offering many classes for career paths, and offering transfer opportunities to universities
+                <br>
+                <br>
+                <span class="blue-paragraph">Location:</span> 10309 N Willow Ave, Fresno, CA 93730
+                <br>
+                <br>
+                <span class="blue-paragraph">Phone Number:</span> (559) 325-5200
+                </p>
+            </div>
+
+            <br>
+
+            <h4 class='content-header'><a href="https://www.calchristiancollege.edu/" target="blank_">California Christian College</a></h4>
+            <div class='content-container'>
+                <a href="https://www.calchristiancollege.edu/" target="blank_"><img id="img" src="./images/chrcol.jpg"></a>
+                <p class="desc">The mission of California Christian College is to offer academic programs that develop Christian leaders to serve Christ both in the Church and in society
+                <br>
+                <br>
+                <span class="blue-paragraph">Location:</span> 5364 E. Belmont Ave. Fresno, CA 93727
+                <br>
+                <br>
+                <span class="blue-paragraph">Phone Number:</span> (559) 251-4215
+                </p>
+            </div>
+
+            <br>
+
+            
+        </div>
+
+        <!--Column Three-->
+        <div class='column'>
+            <h3 class='section-header'>Vocational Training</h3>
+
+            <h4 class='content-header'><a href="https://geekwiseacademy.com/" target="blank_">Geekwise Academy</a></h4>
+            <div class='content-container'>
+                <a href="https://geekwiseacademy.com/" target="blank_"><img id="img" src="./images/geekwise.jpg"></a>
+                <p class="desc">Geekwise Academy offers afordable HTML, CSS, and Javascript coding courses for those who want to learn how to code
+                <br>
+                <br>
+                <span class="blue-paragraph">Location:</span> 700 Van Ness Ave, Fresno, CA 93721
+                <br>
+                <br>
+                <span class="blue-paragraph">Phone Number:</span> (559) 500-3305 ext. 222
+                </p>
+            </div>
+
+            <br>
+
+            <h4 class='content-header'><a href="https://www.jbaeronautics.com/" target="blank_">JB Aeronautics</a></h4>
+            <div class='content-container'>
+                    <a href="https://www.jbaeronautics.com/" target="blank_"><img id="img" src="./images/jba.png"></a>
+                <p class="desc">JB Aeronautics provides a variety of flying lessons and certifications for aspiring pilots. With 48 years of pilot training experience, JB Aeronautics is offers the best in order to help you become a pilot
+                <br>
+                <br>
+                <span class="blue-paragraph">Location:</span> 4955 E Andersen Ave, Fresno, CA 93727
+                <br>
+                <br>
+                <span class="blue-paragraph">Phone Number:</span> (559) 293-4988
+                </p>
+            </div>
+            
+            <br>
+
+            <h4 class='content-header'><a href="https://www.psrtraining.com/" target="blank_">P. Steve Ramirez Vocational Training Center</a></h4>
+            <div class='content-container'>
+                <a href="https://www.psrtraining.com/" target="blank_"><img id="img" src="./images/psr.png"></a>
+                <p class="desc">Provides many vocational training programs such as truck driving, grant writing, and many others
+                <br>
+                <br>
+                <span class="blue-paragraph">Location:</span> 1300 W Shaw Ave #1a, Fresno, CA 93711
+                <br>
+                <br>
+                <span class="blue-paragraph">Phone Number:</span> (866) 478-0609
+                </p>
+            </div>
+
+            <br>
+
+            <h4 class='content-header'><a href="http://www.proteusinc.org/" target="blank_">Proteus Inc.</a></h4>
+            <div class='content-container'>
+                <a href="http://www.proteusinc.org/" target="blank_"><img id="img" src="./images/pro.png"></a>
+                <p class="desc">Our “Mission” is to provide education, job training, job placement, and other support services to farm working families and other program participants
+                <br>
+                <br>
+                <span class="blue-paragraph">Location:</span> 1815 Van Ness Ave, Fresno, CA 93721
+                <br>
+                <br>
+                <span class="blue-paragraph">Phone Number:</span> (559) 499-2140
+                </p>
+            </div>
+
+            <br>
+
+            <h4 class='content-header'><a href="https://advanced.edu/" target="blank_">Advanced Career Institute</a></h4>
+            <div class='content-container'>
+                <a href="https://advanced.edu/" target="blank_"><img id="img" src="./images/aci.jpg"></a>
+                <p class="desc">At Advanced Career Institute, students gain quality education and training needed to start a new career. ACI programs combine both hands-on experience and in-class technical training for Class A CDL, Class B CDL, school bus driving, and welding
+                <br>
+                <br>
+                <span class="blue-paragraph">Location:</span> 2953 S. East Avenue, Fresno, California 93725
+                <br>
+                <br>
+                <span class="blue-paragraph">Phone Number:</span> (559) 407-9191
+                </p>
+            </div>
+
+            <br>
+
+            
+
+        </div>
+    </div>
+
+    <!--Footer Section-->
+    <footer id='footer'>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 footer-navigation">
+                    <h3><a href="#">The 559 Resource</a></h3>
+                    <p class="company-name">The 559 Resource © 2019</p>
+                </div>
+                <div class="col-md-4 col-sm-6 footer-contacts">
+                    <div><span class="fa fa-map-marker footer-contacts-icon"> <a href="https://goo.gl/maps/DuLtf2hbgzt" target="_blank"></a></span>
+                        <p><span class="new-line-span">700 Van Ness Ave<br></span>Fresno, CA</p>
+                    </div>
+                    <div><i class="fa fa-phone footer-contacts-icon"></i>
+                        <p class="footer-center-info email text-left"> +1 555 123456</p>
+                    </div>
+                    <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                        <p> <a href="#" target="_blank">the559resource@company.com</a></p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-md-4 footer-about">
+                    <h4>About the company</h4>
+                    <p> The 559 Resource is an online source that helps individuals locate local educational and career services that fits their needs. Our online survey will help guide those individuals to the "right" path of options, depending on their interest
+                        and needs.&nbsp;</p>
+                    <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                </div>
+            </div>
+        </footer>
+
+    <!--Scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+</body>
+</html>
