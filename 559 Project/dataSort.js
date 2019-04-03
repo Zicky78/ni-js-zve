@@ -122,7 +122,7 @@ function sort() {
             selectRandom();
         break;
 
-        case "No High School":
+        case "No Education":
             for(i = 0; i < resources.length; i++) {
                 if(resources[i].education === "No High School" || resources[i].education === "None") {
                     tempResources.push(resources[i]);
